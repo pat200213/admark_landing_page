@@ -21,12 +21,12 @@
 
                 <div class="flex md:order-2 space-x-3 rtl:space-x-reverse">
                     <button type="button"
-                        class="text-secondary border border-secondary hover:opacity-80 font-medium rounded text-sm px-4 py-2 text-center">
+                        class="text-secondary border border-secondary hover:opacity-80 font-medium rounded text-sm px-4 py-2 text-center hidden md:block">
                         Login
                     </button>
 
                     <button type="button"
-                        class="text-white bg-secondary hover:opacity-80 font-medium rounded text-sm px-4 py-2 text-center">
+                        class="text-white bg-secondary hover:opacity-80 font-medium rounded text-sm px-4 py-2 text-center hidden md:block">
                         Try for free
                     </button>
 
@@ -44,7 +44,7 @@
 
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
                     <ul
-                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         <li>
                             <a href="#home"
                                 class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
@@ -66,7 +66,21 @@
                             <a href="#testimonial"
                                 class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Customer Stories</a>
                         </li>
+                        <li class="my-3 md:hidden">
+                            <button type="button"
+                                class="text-secondary border border-secondary hover:opacity-80 font-medium rounded text-sm px-4 py-2 text-center w-full">
+                                Login
+                            </button>
+                        </li>
+                        <li class="md:hidden">
+                            <button type="button"
+                                class="text-white bg-secondary hover:opacity-80 font-medium rounded text-sm px-4 py-2 text-center w-full">
+                                Try for free
+                            </button>
+                        </li>
                     </ul>
+
+                    
                 </div>
             </div>
         </nav>
@@ -77,11 +91,11 @@
             <div class="container">
                 <div class="flex flex-wrap">
                     <div class="px-4 w-full lg:w-2/4 self-start">
-                        <h1 class="text-4xl font-semibold text-primary">Everything you need to get approval from your
+                        <h1 class="text-xl md:text-4xl font-semibold text-primary">Everything you need to get approval from your
                             customer</h1>
-                        <p class="font-medium mb-5 text-primary text-opacity-80 py-1">Smart uploading previews on real
+                        <p class="font-medium mb-5 text-sm md:text-base text-primary text-opacity-80 py-1">Smart uploading previews on real
                             sites, and feedback management</p>
-                        <button class="text-white rounded uppercase bg-secondary px-4 py-1 hover:shadow-lg 
+                        <button class="text-white rounded font-medium text-sm  md:text-base uppercase bg-secondary px-4 py-1 hover:shadow-lg 
                                 hover:opacity-80 transition duration-300 ease-in-out">Get my free triaL</button>
                         <p class="py-1 text-primary text-xs text-opacity-80">*no credit card required</p>
                     </div>
@@ -100,7 +114,7 @@
             <!-- carousel logo company -->
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
               
-                <div class="flex items-center gap-12 justify-between">
+                <div class="grid grid-cols-3 md:grid-cols-6 items-center gap-12">
                    
                     <a href="#" class="flex justify-center items-center">
                         <img src="./src/img/company_logo1.png" alt="" class="object-fill h-9 w-36">
@@ -130,48 +144,48 @@
             
         </section>
 
-        <section id="features" class="pt-12 pb-32">
+        <section id="features" class="pb-24 md:pt-12 md:pb-32">
             <div class="container">
-                <div class="flex flex-wrap">
-                    <div class="w-full px-4 lg:w-1/2">
-                        <img src="./src/img/image2.png" alt="">
-                    </div>
+                <div class="flex flex-wrap md:flex-row-reverse">
 
                     <div class="w-full px-4 lg:w-1/2">
-                        <h2 class="text-3xl font-semibold text-primary">Improve design your workflow with Admark</h2>
+                        <h2 class="text-xl md:text-3xl font-semibold text-primary">Improve design your workflow with Admark</h2>
 
-                        <ul class="mt-3 mb-6 text-primary text-opacity-80">
+                        <ul class="mt-3 mb-6 text-sm text-primary text-opacity-80">
                             <li>Boost Your Feedback</li>
                             <li>Give your ads stage they deserve</li>
                             <li>Upload your ads and present them to your client</li>
                             <li>Demo your ads inside real websites</li>
                         </ul>
 
-                        <button class="bg-secondary rounded text-white px-4 py-1">TRY IT FOR FREE</button>
+                        <button class="bg-secondary font-medium text-sm rounded text-white px-4 py-1">TRY IT FOR FREE</button>
                     </div>
 
+                    <div class="w-full px-4 lg:w-1/2">
+                        <img src="./src/img/image2.png" alt="">
+                    </div>
                 </div>
 
             </div>
 
         </section>
 
-        <section id="pricing" class="pb-32">
+        <section id="pricing" class="pb-12">
             <div class="container">
 
-                <div class="grid grid-cols-3 gap-12 mt-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mt-8">
                     <div class="flex flex-col max-w-sm text-gray-900 rounded-xl bg-indigo-50 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-gray-100">
                         <h3 class="text-primary font-manrope text-xl font-bold mb-3">Free</h3>
                         
                         <div class="flex items-center mb-6">
                           <span class="font-manrope mr-2 text-2xl text-secondary font-semibold">$0</span>
-                          <span class="text-xs text-gray-500">/month</span>
+                          <span class="text-sm md:text-xs text-gray-500">/month</span>
                         </div>
 
                         <p class="text-primary text-sm text-opacity-80 mb-5">For speedup your hobby and small project.</p>
 
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-xs text-gray-500">
+                        <ul class="mb-12 space-y-6 text-left text-sm md:text-xs text-gray-500">
                           <li class="flex items-center space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-4 h-4 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -208,18 +222,18 @@
                         <!--List End-->
                     </div>
     
-                    <div class="flex flex-col max-w-sm scale-125 shadow text-gray-900 rounded-xl bg-orange-200 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-orange-100">
+                    <div class="flex flex-col max-w-sm md:scale-125 shadow text-gray-900 rounded-xl bg-orange-200 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-orange-100">
                         <h3 class="text-primary font-manrope text-md font-bold mb-3">Designer Plus <span class="bg-orange-300 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Recomended</span></h3>
                         
                         <div class="flex items-center mb-6">
                           <span class="font-manrope mr-2 text-3xl text-secondary font-semibold">$69</span>
-                          <span class="text-xs text-gray-500">/month</span>
+                          <span class="text-sm md:text-xs text-gray-500">/month</span>
                         </div>
 
                         <p class="text-primary text-sm text-opacity-80 mb-5">For developers and businesses who need design and tech.</p>
 
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-xs text-gray-500">
+                        <ul class="mb-12 space-y-6 text-left text-sm md:text-xs text-gray-500">
                           <li class="flex items-center align-middle space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-5 h-5 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -261,13 +275,13 @@
                         
                         <div class="flex items-center mb-6">
                           <span class="font-manrope mr-2 text-2xl text-secondary font-semibold">$100</span>
-                          <span class="text-xs text-gray-500">/month</span>
+                          <span class="text-sm md:text-xs text-gray-500">/month</span>
                         </div>
 
                         <p class="text-primary text-sm text-opacity-80 mb-5">For designers and design agency to work faster on Figma Design system.</p>
 
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-xs text-gray-500">
+                        <ul class="mb-12 space-y-6 text-left text-sm md:text-xs text-gray-500">
                           <li class="flex items-center space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-4 h-4 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -308,10 +322,10 @@
             
         </section>
 
-        <section id="demo" class="p-32">
+        <section id="demo" class="py-24 md:py-32">
             <div class="container">
-                <h2 class="text-center font-semibold text-3xl text-primary mb-2">How it works</h2>
-                <p class="font-medium mb-8 text-primary text-opacity-80 py-1 text-center">Built by product manager themselves,
+                <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">How it works</h2>
+                <p class="font-medium mb-8 text-primary text-sm md:text-base text-opacity-80 py-1 text-center">Built by product manager themselves,
                     this sites comes with features you need to manage customer feedback with simple pricing and package.</p>
                     
                 <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
@@ -325,7 +339,7 @@
                             </svg>
                         </div>
                         <!-- Card -->
-                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow text-sm md:text-base">
                             
                             <time class="font-caveat font-medium text-indigo-500">Step 1</time>
                             <div class="font-bold text-slate-900 mb-1">Create Request</div>
@@ -343,7 +357,7 @@
                             </svg>
                         </div>
                         <!-- Card -->
-                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow text-sm md:text-base">
                             
                             <time class="font-caveat font-medium text-indigo-500">Step 2</time>
                             <div class="font-bold text-slate-900 mb-1">Payment</div>
@@ -361,7 +375,7 @@
                             </svg>
                         </div>
                         <!-- Card -->
-                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow text-sm md:text-base">
                              
                             <time class="font-caveat font-medium text-indigo-500">Step 3</time>
                             <div class="font-bold text-slate-900 mb-1">Personal Info</div>
@@ -379,7 +393,7 @@
                             </svg>
                         </div>
                         <!-- Card -->
-                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow text-sm md:text-base">
                              
                             <time class="font-caveat font-medium text-indigo-500">Step 4</time>
                             <div class="font-bold text-slate-900 mb-1">Create Banner</div>
@@ -397,7 +411,7 @@
                             </svg>
                         </div>
                         <!-- Card -->
-                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow">
+                        <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded border border-slate-200 shadow text-sm md:text-base">
                              
                             <div class="font-bold text-slate-900 mb-1">Finish</div>
                         
@@ -412,10 +426,10 @@
 
         <section id="testimonial" class="pt-14 pb-32">
             <div class="container flex flex-col items-center">
-                <h2 class="text-center font-semibold text-3xl text-primary mb-2">What clients say</h2>
-                <p class="font-medium mb-8 text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+                <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">What clients say</h2>
+                <p class="font-medium mb-8 text-sm md:text-base text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
                
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                     <div class="grid gap-4">
                         <div>
                             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
@@ -567,17 +581,17 @@
                     </div>
                 </div>
 
-                <a class="text-center cursor-pointer border border-secondary rounded text-secondary px-4 py-1 capitalize hover:opacity-80">See more stories</a>
+                <a class="text-center text-sm md:text-base cursor-pointer border border-secondary rounded text-secondary px-4 py-1 capitalize hover:opacity-80">See more stories</a>
 
             </div>
         </section>
 
-        <section id="testimonial" class="pt-14 pb-32">
+        <section id="testimonial" class="pb-32">
             <div class="container flex flex-col items-center">
-                <h2 class="text-center font-semibold text-3xl text-primary mb-2">You've got some questions?</h2>
-                <p class="font-medium mb-8 text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
+                <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">You've got some questions?</h2>
+                <p class="font-medium mb-8 text-sm md:text-base text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
 
-                <a class="text-center cursor-pointer bg-secondary rounded text-white px-4 py-1 capitalize hover:opacity-80">Contact us!</a>
+                <a class="text-center text-sm md:text-base cursor-pointer bg-secondary rounded text-white px-4 py-1 capitalize hover:opacity-80">Contact us!</a>
 
             </div>
         </section>
@@ -682,6 +696,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 
 </body>
 
