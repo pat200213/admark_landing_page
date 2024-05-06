@@ -47,24 +47,31 @@
                         class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
                         <li>
                             <a href="#home"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                                aria-current="page">Home</a>
+                                class="block py-2 px-3 text-gray-900 rounded link-active hover:text-secondary hover:bg-gray-100 md:hover:bg-transparent md:p-0">
+                                Home
+                            </a>
                         </li>
                         <li>
                             <a href="#features"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Features</a>
+                                class="block py-2 px-3 text-gray-900 rounded hover:text-secondary hover:bg-gray-100 md:hover:bg-transparent md:p-0">
+                                 Features
+                            </a>
                         </li>
                         <li>
                             <a href="#pricing"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
+                                class="block py-2 px-3 text-gray-900 rounded hover:text-secondary hover:bg-gray-100 md:hover:bg-transparent md:p-0"  >
+                                 Pricing
+                            </a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Demo</a>
+                            <a href="#demo"
+                                class="block py-2 px-3 text-gray-900 rounded hover:text-secondary hover:bg-gray-100 md:hover:bg-transparent md:p-0">
+                                 Demo
+                            </a>
                         </li>
                         <li>
                             <a href="#testimonial"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Customer Stories</a>
+                                class="block py-2 px-3 text-gray-900 rounded  hover:text-secondary hover:bg-gray-100 md:hover:bg-transparent md:p-0">Customer Stories</a>
                         </li>
                         <li class="my-3 md:hidden">
                             <button type="button"
@@ -90,7 +97,7 @@
         <section id="home" class="pt-32">
             <div class="container">
                 <div class="flex flex-wrap">
-                    <div class="px-4 w-full lg:w-2/4 self-start">
+                    <div class="px-4 w-full lg:w-2/4 self-start animate-fade-left">
                         <h1 class="text-xl md:text-4xl font-semibold text-primary">Everything you need to get approval from your
                             customer</h1>
                         <p class="font-medium mb-5 text-sm md:text-base text-primary text-opacity-80 py-1">Smart uploading previews on real
@@ -100,7 +107,7 @@
                         <p class="py-1 text-primary text-xs text-opacity-80">*no credit card required</p>
                     </div>
 
-                    <div class="px-4 w-full lg:w-2/4 self-end">
+                    <div class="px-4 w-full lg:w-2/4 self-end animate-fade-in">
                         <img src="./src/img/image1.png" alt="">
                     </div>
 
@@ -113,33 +120,28 @@
         <section class="py-24">
             <!-- carousel logo company -->
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-              
-                <div class="grid grid-cols-3 md:grid-cols-6 items-center gap-12">
-                   
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="./src/img/company_logo1.png" alt="" class="object-fill h-9 w-36">
-                    </a>
+                
+                <div class="flex overflow-hidden space-x-16">
+                    <div class="flex space-x-16 animate-infinite-scroll">
+                      <img loading="lazy" src="./src/img/company_logo1.png" class="max-w-36" alt="Image 1" />
+                      <img loading="lazy" src="./src/img/company_logo2.png" class="max-w-36" alt="Image 2" />
+                      <img loading="lazy" src="./src/img/company_logo3.png" class="max-w-36" alt="Image 3" />
+                      <img loading="lazy" src="./src/img/company_logo4.png" class="max-w-36" alt="Image 4" />
+                      <img loading="lazy" src="./src/img/company_logo5.png" class="max-w-36" alt="Image 5" />
+                      <img loading="lazy" src="./src/img/company_logo6.png" class="max-w-36" alt="Image 6" />
+                    </div>
 
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="./src/img/company_logo2.png" alt="" class="object-fill h-9 w-36">
-                    </a>
-
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="./src/img/company_logo3.png" alt="" class="object-fill h-9 w-36">
-                    </a>
-                   
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="./src/img/company_logo4.png" alt="" class="object-fill h-9 w-36">
-                    </a>
-
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="./src/img/company_logo5.png" alt="" class="object-fill h-36 w-36">
-                    </a>
-
-                    <a href="#" class="flex justify-center items-center">
-                        <img src="./src/img/company_logo6.png" alt="" class="object-fill h-36 w-36">
-                    </a>
+                    <div class="flex space-x-16 animate-infinite-scroll" aria-hidden="true">
+                        <img loading="lazy" src="./src/img/company_logo1.png" class="max-w-36" alt="Image 1" />
+                        <img loading="lazy" src="./src/img/company_logo2.png" class="max-w-36" alt="Image 2" />
+                        <img loading="lazy" src="./src/img/company_logo3.png" class="max-w-36" alt="Image 3" />
+                        <img loading="lazy" src="./src/img/company_logo4.png" class="max-w-36" alt="Image 4" />
+                        <img loading="lazy" src="./src/img/company_logo5.png" class="max-w-36" alt="Image 5" />
+                        <img loading="lazy" src="./src/img/company_logo6.png" class="max-w-36" alt="Image 6" />
+                    </div>
                 </div>
+
+              
             </div>       
             
         </section>
@@ -148,7 +150,7 @@
             <div class="container">
                 <div class="flex flex-wrap md:flex-row-reverse">
 
-                    <div class="w-full px-4 lg:w-1/2">
+                    <div class="w-full px-4 lg:w-1/2 animate-fade-up">
                         <h2 class="text-xl md:text-3xl font-semibold text-primary">Improve design your workflow with Admark</h2>
 
                         <ul class="mt-3 mb-6 text-sm text-primary text-opacity-80">
@@ -161,7 +163,7 @@
                         <button class="bg-secondary font-medium text-sm rounded text-white px-4 py-1">TRY IT FOR FREE</button>
                     </div>
 
-                    <div class="w-full px-4 lg:w-1/2">
+                    <div class="w-full px-4 lg:w-1/2 animate-fade-up">
                         <img src="./src/img/image2.png" alt="">
                     </div>
                 </div>
@@ -174,7 +176,7 @@
             <div class="container">
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-12 mt-8">
-                    <div class="flex flex-col max-w-sm text-gray-900 rounded-xl bg-indigo-50 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-gray-100">
+                    <div class="flex flex-col max-w-sm text-gray-900 rounded-xl bg-indigo-50 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-gray-100 animate-fade-left">
                         <h3 class="text-primary font-manrope text-xl font-bold mb-3">Free</h3>
                         
                         <div class="flex items-center mb-6">
@@ -222,7 +224,7 @@
                         <!--List End-->
                     </div>
     
-                    <div class="flex flex-col max-w-sm md:scale-125 shadow text-gray-900 rounded-xl bg-orange-200 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-orange-100">
+                    <div class="flex flex-col max-w-sm md:scale-125 shadow text-gray-900 rounded-xl bg-orange-200 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-orange-100 animate-fade-in">
                         <h3 class="text-primary font-manrope text-md font-bold mb-3">Designer Plus <span class="bg-orange-300 text-white text-sm font-medium me-2 px-2.5 py-0.5 rounded ms-3">Recomended</span></h3>
                         
                         <div class="flex items-center mb-6">
@@ -270,7 +272,7 @@
                         <!--List End-->
                     </div>
 
-                    <div class="flex flex-col max-w-sm text-gray-900 rounded-xl bg-indigo-50 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-gray-100">
+                    <div class="flex flex-col max-w-sm text-gray-900 rounded-xl bg-indigo-50 p-6 xl:py-9 xl:px-12 transition-all duration-500 hover:bg-gray-100 animate-fade-left">
                         <h3 class="text-primary font-manrope text-lg font-bold mb-3">Developer Plus</h3>
                         
                         <div class="flex items-center mb-6">
@@ -331,7 +333,7 @@
                 <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
 
                     <!-- Item #1 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active animate-fade-left">
                         <!-- Icon -->
                         <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
@@ -349,7 +351,7 @@
                     </div>
                     
                     <!-- Item #2 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active animate-fade-left">
                         <!-- Icon -->
                         <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
@@ -367,7 +369,7 @@
                     </div>
                     
                     <!-- Item #3 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active animate-fade-left">
                         <!-- Icon -->
                         <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
@@ -385,7 +387,7 @@
                     </div>
                     
                     <!-- Item #4 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active animate-fade-left">
                         <!-- Icon -->
                         <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="10">
@@ -403,7 +405,7 @@
                     </div>
                     
                     <!-- Item #5 -->
-                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group">
+                    <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group animate-fade-left">
                         <!-- Icon -->
                         <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-emerald-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
                             <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="12" height="12">
@@ -424,19 +426,19 @@
             </div>
         </section>
 
-        <section id="testimonial" class="pt-14 pb-32">
+        <section id="testimonial" class="py-14">
             <div class="container flex flex-col items-center">
                 <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">What clients say</h2>
                 <p class="font-medium mb-8 text-sm md:text-base text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
                
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
                     <div class="grid gap-4">
-                        <div>
+                        <div class="animate-fade-in">
                             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
                             
                         </div>
 
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border rounded-lg border-gray-200 shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                     
@@ -452,7 +454,7 @@
                             </figure>   
                         </div>
 
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                    
@@ -470,7 +472,7 @@
                     </div>
 
                     <div class="grid gap-4">
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                    
@@ -485,10 +487,10 @@
                                 </figcaption>    
                             </figure>    
                         </div>
-                        <div>
+                        <div class="animate-fade-in">
                             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                    
@@ -507,10 +509,10 @@
                     </div>
 
                     <div class="grid gap-4">
-                        <div>
+                        <div class="animate-fade-in">
                             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
                         </div>
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                   
@@ -526,13 +528,13 @@
                                 </figcaption>    
                             </figure>
                         </div>
-                        <div>
+                        <div class="animate-fade-in">
                             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
                         </div>
                     </div>
 
                     <div class="grid gap-4">
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                    
@@ -547,7 +549,7 @@
                                 </figcaption>    
                             </figure>
                         </div>
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                    
@@ -563,7 +565,7 @@
                             </figure>  
                             
                         </div>
-                        <div>
+                        <div class="animate-fade-in">
                             <figure class="flex flex-col items-center justify-center p-8 text-center bg-white border border-gray-200 rounded-lg shadow">
                                 <blockquote class="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
                                    
@@ -586,8 +588,8 @@
             </div>
         </section>
 
-        <section id="testimonial" class="pb-32">
-            <div class="container flex flex-col items-center">
+        <section id="testimonial" class="pb-36 bg-gray-100">
+            <div class="container flex flex-col items-center translate-y-1/2">
                 <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">You've got some questions?</h2>
                 <p class="font-medium mb-8 text-sm md:text-base text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
 
@@ -697,6 +699,7 @@
         </div>
     </footer>
 
+    <script src="./src/script.js"></script>
     <script src="./node_modules/flowbite/dist/flowbite.min.js"></script>
 
 </body>
