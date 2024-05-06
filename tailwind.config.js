@@ -15,8 +15,8 @@ module.exports = {
       animation: {
         'infinite-scroll': 'infinite-scroll 25s linear infinite',
         'fade-left': 'fade-left 1.5s linear',
-        'fade-in': 'fade-in 1.1s linear',
-        'fade-up': 'fade-up 1.1s linear',
+        'fade-in': 'fade-in 1.5s linear',
+        'fade-up': 'fade-up 1.5s linear',
       },
       keyframes: {
         'infinite-scroll': {
@@ -41,6 +41,6 @@ module.exports = {
       }   
     },
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), require('tailwindcss-intersect')],
 }
 

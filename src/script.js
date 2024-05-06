@@ -23,4 +23,15 @@ window.onscroll = () => {
                
         }
     });
+
+    if(window.scrollY > 250){
+        document.querySelector('#btn-go-up').classList.remove('hidden')
+    }
+    else{
+        document.querySelector('#btn-go-up').classList.add('hidden')
+    }
+
+    document.querySelector('#btn-go-up').addEventListener('click', function(){
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
 }
