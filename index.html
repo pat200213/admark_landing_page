@@ -194,7 +194,7 @@
                         <p class="text-primary text-sm text-opacity-80 mb-5">For speedup your hobby and small project.</p>
 
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-sm md:text-xs text-gray-500">
+                        <ul class="mb-12 space-y-6 text-left text-sm text-gray-500">
                           <li class="flex items-center space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-4 h-4 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -242,7 +242,7 @@
                         <p class="text-primary text-sm text-opacity-80 mb-5">For developers and businesses who need design and tech.</p>
 
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-sm md:text-xs text-gray-500">
+                        <ul class="mb-12 space-y-6 text-left text-sm text-gray-500">
                           <li class="flex items-center align-middle space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-5 h-5 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -290,7 +290,7 @@
                         <p class="text-primary text-sm text-opacity-80 mb-5">For designers and design agency to work faster on Figma Design system.</p>
 
                         <!--List-->
-                        <ul class="mb-12 space-y-6 text-left text-sm md:text-xs text-gray-500">
+                        <ul class="mb-12 space-y-6 text-left text-sm text-gray-500">
                           <li class="flex items-center space-x-4">
                             <!-- Icon -->
                             <svg class="flex-shrink-0 w-4 h-4 text-indigo-600" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -434,11 +434,11 @@
         </section>
 
         <section id="testimonial" class="py-14">
-            <div class="container flex flex-col items-center">
+            <div class="container relative flex flex-col items-center">
                 <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">What clients say</h2>
                 <p class="font-medium mb-8 text-sm md:text-base text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
                
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-8 max-h-[33rem] overflow-hidden">
                     <div class="grid gap-4">
                         <div class="opacity-0 intersect:animate-fade-in intersect:animate-duration-100 intersect:animate-delay-100 intersect:opacity-100">
                             <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
@@ -590,12 +590,16 @@
                     </div>
                 </div>
 
-                <a class="text-center text-sm md:text-base cursor-pointer border border-secondary rounded text-secondary px-4 py-1 capitalize hover:opacity-80">See more stories</a>
-
+                <div class="absolute w-full bg-gradient-to-t from-white bottom-0 pt-32 pb-8 z-10 text-center">
+                    <a class="text-center text-sm md:text-base cursor-pointer border border-secondary rounded text-secondary px-4 py-1 capitalize hover:opacity-80">
+                        See more stories
+                    </a>
+                </div>
+               
             </div>
         </section>
 
-        <section id="testimonial" class="pb-36 bg-gray-100">
+        <section id="testimonial" class="pb-36 mt-24 bg-gray-100">
             <div class="container flex flex-col items-center translate-y-1/2">
                 <h2 class="text-center font-semibold text-xl md:text-3xl text-primary mb-2">You've got some questions?</h2>
                 <p class="font-medium mb-8 text-sm md:text-base text-primary text-opacity-80 py-1 text-center">Explore the whole collection of open-source web components and elements built with the utility classes from Tailwind</p>
